@@ -7,7 +7,7 @@ const router = express.Router()
 
 router.post('/addBooks',BooksController.Add)
 router.put('/update/:id',BooksController.UpdateBookbyID)
-router.get('/SpecificBooks',BooksController.BookwithID)
+router.get('/SpecificBooks/:id',BooksController.BookwithID)
 router.get ('/allBooks',BooksController.getAllBook)
 router.delete('/deleteBook/:id',BooksController.deleteBooks)
 
